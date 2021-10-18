@@ -1,0 +1,21 @@
+{
+  "name": "vote",
+  "version": "1.0.0",
+  "description": "vote\r ===============",
+  "main": "main.js",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.1",
+    "uview-ui": "^1.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://39.106.120.34:8080/git/git/chensf/vote.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
