@@ -3,10 +3,92 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/regist/regist",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/login/regist/binding",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/login/regist/bindingOld",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			
+			}
+		},
+		{
+			"path": "pages/mine/edit/information",
+			"style": {
+				"navigationBarTitleText": "个人设置"
+			}
+		},
+		{
+			"path": "pages/mine/real/real",
+			"style": {
+				"navigationBarTitleText": ""
+			
+			}
+		},
+		{
+			"path": "pages/photo/photo",
+			"style": {
+				"navigationBarTitleText": "监控"
 			}
 		}
 	],
+	"tabBar": {
+		"selectedColor": "#3A9255",
+		"backgroundColor": "#fff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/images/index1.png",
+			"selectedIconPath": "static/images/new2.png"
+		}, {
+			"pagePath": "pages/photo/photo",
+			"text": "监控",
+			"iconPath": "static/images/photo1.png",
+			"selectedIconPath": "static/images/new1.png"
+		},
+		{
+			"pagePath": "pages/message/message",
+			"text": "消息",
+			"iconPath": "static/images/message1.png",
+			"selectedIconPath": "static/images/new4.png"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"text": "我的",
+			"iconPath": "static/images/mine1.png",
+			"selectedIconPath": "static/images/new3.png"
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

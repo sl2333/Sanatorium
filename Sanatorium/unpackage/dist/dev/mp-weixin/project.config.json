@@ -10,8 +10,6 @@
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "Sanatorium",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
       "current": -1,

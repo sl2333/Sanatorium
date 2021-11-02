@@ -1,0 +1,66 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/regist/regist",
+          "pathName": "pages/login/regist/regist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/regist/binding",
+          "pathName": "pages/login/regist/binding",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/regist/bindingOld",
+          "pathName": "pages/login/regist/bindingOld",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/edit/information",
+          "pathName": "pages/mine/edit/information",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/edit/information",
+          "pathName": "pages/mine/edit/information",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
