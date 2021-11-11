@@ -37,7 +37,7 @@
 			</view>
 		</view>
 		<view class="bottom" style="margin-top: 45rpx;">
-			<view class="bottom-item">
+			<view class="bottom-item" @click="gotoInformation()">
 				<image src="../../static/images/mine7.png" />
 				<text>个人信息</text>
 				<image class="right" src="../../static/images/mine3.png" />

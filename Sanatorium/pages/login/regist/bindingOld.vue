@@ -14,17 +14,17 @@
 			<view class="item">
 				<text>老人姓名</text>
 				<input type="text" placeholder-style="color:#898989;text-align:right"
-					style="text-align: right;margin-left: 258rpx;" placeholder="请输入" v-model="name" />
+					style="text-align: right;margin-left: 200rpx;" placeholder="请输入" v-model="name" />
 			</view>
 			<view class="item">
 				<text>身份证号</text>
 				<input type="text" placeholder-style="color:#898989;text-align:right"
-					style="text-align: right;margin-left: 260rpx;" placeholder="请输入" v-model="idCard" />
+					style="text-align: right;margin-left: 200rpx;" placeholder="请输入" v-model="idCard" />
 			</view>
 			<view class="item">
 				<text>出生年月</text>
 				<input type="text" placeholder-style="color:#898989;text-align:right"
-					style="text-align: right;margin-left: 258rpx;" placeholder="请输入" v-model="phone" />
+					style="text-align: right;margin-left: 200rpx;" placeholder="请输入" v-model="phone" />
 			</view>
 			<view class="item">
 				<text>和老人关系</text>
@@ -96,13 +96,16 @@
 </script>
 
 <style>
+	page{
+		background-color: #f7f8f9;
+	}
 	.content {
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background-color: rgb(247, 248, 249);
+		
 	}
 
 	.title {

@@ -102,6 +102,8 @@
 		color: #0B4A87;
 		font-size: small;
 		margin-top: 55rpx;
+		width: 200rpx;
+		
 	}
    .bottom{
 	   color: #1D610C;

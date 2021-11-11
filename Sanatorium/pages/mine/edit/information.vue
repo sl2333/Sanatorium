@@ -47,7 +47,7 @@
 				<text>实名认证</text>
 				<view class="right">
 					<view class="unShure" v-if="status==0">
-						<text>未认证</text>
+						<text @click="jumpTo()">未认证</text>
 					</view>
 					<view class="shure" v-if="status==1">
 						<text>已认证</text>
@@ -95,7 +95,11 @@
 
 		},
 		methods: {
-
+			jumpTo(){
+				uni.navigateTo({
+					url:'../real/real'
+				})
+			}
 		}
 	}
 </script>

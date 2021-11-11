@@ -1,8 +1,111 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+		<view class="top">
+			<view class="top-up">
+				<view class="address">临安
+					<image class="down" src="../../static/images/down1.png" />
+				</view>
+				<view class="search">
+					<image class="search-icon" src="../../static/images/search.png" />
+					<input type="text" value="搜索" />
+				</view>
+				<image class="plus-icon" src="../../static/images/plus.png" />
+			</view>
+			<image class="top-image" src="../../static/images/index15.png" />
+		</view>
+		<!-- 四个模块 -->
+		<view class="mid">
+			<view class="up">
+				<view class="item" @click="gotoLogin()">
+				<image src="../../static/images/index5.png" />
+				<text>家人健康</text>
+				</view>
+				<view class="item">
+				<image src="../../static/images/index6.png" />
+				<text>互联疗养</text>
+				</view>
+				<view class="item">
+				<image src="../../static/images/index3.png" />
+				<text>护工交流</text>
+				</view>
+				<view class="item">
+				<image src="../../static/images/index4.png" />
+				<text>易趣活动</text>
+				</view>
+			</view>
+			<!-- 导航栏 -->
+			<view class="tabs">
+				<view class="tabs-item">
+					<image src="../../static/images/index8.png" />
+					<text>疗养院</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index12.png" />
+					<text>预约申请</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index10.png" />
+					<text>花费明细</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index14.png" />
+					<text>反馈建议</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index13.png" />
+					<text>每日任务</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index7.png" />
+					<text>实时视频</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index9.png" />
+					<text>聊一聊</text>
+				</view>
+				<view class="tabs-item">
+					<image src="../../static/images/index11.png" />
+					<text>立即报警</text>
+				</view>
+			</view>
+			<!-- 栅格 -->
+			<view class="line-row"/>
+			<view class="box">
+				<view class="line-column"/>
+				<view class="line-column"/>
+				<view class="line-column"/>
+			</view>
+			<!-- 在线咨询 -->
+			<view class="doctor">
+				<image class="doc" src="../../static/images/doctor.png"/>
+				<view class="word">
+					<text class="title">老人健康问题在线咨询</text>
+					<text>名医在线解答疑惑</text>
+				</view>
+				<image class="right" src="../../static/images/mine3.png" />
+			</view>
+			<!-- 轮播图 -->
+			<view class="lunbo">
+				<swiper class="banner-container" autoplay="true" circular="true" interval="3000" duration="1000"
+					previous-margin="20rpx" next-margin="20rpx">
+					<block v-for="(item,index) in swipers" :key="index">
+						<swiper-item class="banner-item">
+							<view class="banner-box">
+								<image class="banner-img" :src="item.imgUrl"/>
+							</view>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+			<!-- 精彩推荐 -->
+			<view class="recommend">
+				<text>精彩推荐</text>
+				<view class="wrap">
+					<image src="../../static/images/coffee.png" />
+					<image src="../../static/images/coffee.png" />
+					<image src="../../static/images/coffee.png" />
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -11,14 +114,29 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				swipers:[{
+					id:0,
+					imgUrl:'../../static/images/ad5.png'
+				},
+				{
+					id:1,
+					imgUrl:'../../static/images/ad5.png'
+				},
+				{
+					id:2,
+					imgUrl:'../../static/images/ad5.png'
+				}]
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			gotoLogin(){
+				uni.navigateTo({
+					url:'../login/login'
+				})
+			}
 		}
 	}
 </script>
@@ -31,22 +149,224 @@
 		justify-content: center;
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
+	.top {
+		width: 750rpx;
+		height: 280rpx;
+		background-color: rgb(39, 172, 163);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ffffff;
 	}
 
-	.text-area {
+	.top-up {
+		display: flex;
+		width: 750rpx;
+		padding-left: 30rpx;
+		margin-bottom: 25rpx;
+	}
+	.address{
+		margin-top: 10rpx;
+	}
+	.top-image {
+		width: 720rpx;
+		height: 250rpx;
+	}
+
+	.search {
+		width: 480rpx;
+		height: 55rpx;
+		border: 1rpx solid#ffffff;
+		display: flex;
+		padding: 5rpx;
+		border-radius: 50rpx;
+		align-items: center;
+		margin-left: 40rpx;
+
+	}
+
+	.search-icon {
+		width: 35rpx;
+		height: 30rpx;
+		margin: 0rpx 10rpx 0rpx 10rpx;
+	}
+
+	.plus-icon {
+		width: 45rpx;
+		height: 45rpx;
+		margin: 5rpx 10rpx 0rpx 50rpx;
+
+
+	}
+
+	.down {
+		width: 20rpx;
+		height: 20rpx;
+		margin-left: 8rpx;
+	}
+	.mid{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.up{
+		width: 660rpx;
+		height: 180rpx;
+		background-color: #ffffff;
+		border-radius: 25rpx;
+		box-shadow: 0px 2px 6px 0px #959595;
+		margin-top: -100rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 40rpx 0rpx 0rpx 40rpx;
+	}
+	.item{
+		width: 150rpx;
+		height:180rpx;
+		font-size: 27rpx;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.item image{
+		width: 100rpx;
+		height: 100rpx;
+	}
+	.tabs{
+		
+		width: 700rpx;
+		height: 400rpx;
+		background-color: #ffffff;
+		margin-top: 20rpx;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.tabs-item{
+		width: 160rpx;
+		height: 120rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		font-size: 25rpx;
+		align-items: center;
+		
+		
+	}
+	.tabs-item image{
+		width: 50rpx;
+		height: 50rpx;
+		
+	}
+	.line-row{
+		width: 750rpx;
+		height: 1rpx;
+		background-color: #F0F0F0;
+		margin-top: -245rpx;
+	}
+	.box{
+		display: flex;
+		width: 380rpx;
+		justify-content: space-between;
+	}
+	.line-column{
+		height: 330rpx;
+		width: 1rpx;
+		background-color: #f0f0f0;
+		margin-top: -160rpx;
+	}
+	.doctor{
+		width: 680rpx;
+		display: flex;
+		margin-top: 50rpx;
+	}
+	.doc{
+		width: 100rpx;
+		height: 100rpx;
+		
+	}
+	.word{
+		display: flex;
+		flex-direction: column;
+		font-size: 27rpx;
+		color: #878787;
+		margin-left: 20rpx;
+		margin-top: 10rpx;
+	}
+	.title{
+		font-weight: 600;
+		font-size: 28rpx;
+		color: #333333;
+		margin-bottom: 10rpx;
+	}
+	.right{
+		width: 23rpx;
+		height: 23rpx;
+		margin: 40rpx 0rpx 0rpx 250rpx;
+	}
+	.banner-container {
+		width: 100%;
+		height: 200rpx;
+		
+	}
+	.banner-item {
 		display: flex;
 		justify-content: center;
 	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+	
+	.banner-box {
+		width: 97%;
+		/* 控制两张图片的间距 */
+		height: 100%;
+	}
+	
+	.banner-img {
+		width: 690rpx;
+		height: 200rpx;
+		border-radius: 20px;
+	}
+	
+	/* .indicator-dots {
+		margin-top: 40rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.indicator-dots-item {
+		background-color: $u-tips-color;
+		height: 6px;
+		width: 6px;
+		border-radius: 10px;
+		margin: 0 3px;
+	}
+	
+	.indicator-dots-active {
+		background-color: $u-type-primary;
+	} */
+	.lunbo{
+		margin-top: 50rpx;
+		width: 750rpx;
+		background-color: #ffffff;
+	}
+	.recommend{
+		margin-top: 30rpx;
+		width: 700rpx;
+		box-shadow: 0px 0px 4px 1px #d1d1d1;
+		border-radius: 15rpx;
+		font-weight: 600;
+		padding: 15rpx;
+		margin-bottom: 20rpx;
+	}
+	.recommend image{
+		width: 200rpx;
+		height: 200rpx;
+		margin-left: 18rpx;
+		margin-top: 10rpx;
+	}
+	.recommend text{
+		margin-left: 18rpx;
 	}
 </style>

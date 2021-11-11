@@ -59,6 +59,30 @@
           "pathName": "pages/mine/edit/information",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/mine/real/real",
+          "pathName": "pages/mine/real/real",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/photo/photo",
+          "pathName": "pages/photo/photo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/message/message",
+          "pathName": "pages/message/message",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/regist/bindingOld",
+          "pathName": "pages/login/regist/bindingOld",
+          "query": "",
+          "scene": null
         }
       ]
     }

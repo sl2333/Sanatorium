@@ -1,4 +1,7 @@
 
+page{
+	background-color: #f7f8f9;
+}
 .content {
 	height: 100%;
 	display: -webkit-box;
@@ -14,7 +17,6 @@
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
 	        justify-content: center;
-	background-color: rgb(247, 248, 249);
 }
 .title {
 	font-size: large;

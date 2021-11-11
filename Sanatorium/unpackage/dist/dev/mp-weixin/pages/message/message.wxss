@@ -1,37 +1,150 @@
-
+page {
+  background-color: #F7F8F9;
+}
 .content {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.up {
+  width: 750rpx;
+  padding-left: 20rpx;
+  font-size: 37rpx;
 }
-.text-area {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.mid {
+  margin-top: 20rpx;
+  width: 750rpx;
+  height: 230rpx;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 20rpx 50rpx 0rpx 50rpx;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 200rpx;
+  height: 160rpx;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.icon image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.icon text {
+  font-size: 27rpx;
+  color: #333333;
+}
+.down {
+  width: 750rpx;
+  background-color: #FFFFFF;
+  margin-top: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.item {
+  width: 700rpx;
+  height: 160rpx;
+  background-color: #ffffff;
+  padding: 20rpx 0rpx 20rpx 0rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.left image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.right {
+  width: 670rpx;
+  margin-left: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.right1 {
+  width: 670rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+  margin-left: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.right-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100rpx;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.item-title {
+  font-size: 28rpx;
+  color: #333333;
+}
+.item-content {
+  font-size: 26rpx;
+  color: #b0b0b0;
+}
+.right-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 100rpx;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  position: absolute;
+  right: 30rpx;
+}
+.hong {
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50% ;
+  background-color: #ff4d4d;
 }
 
