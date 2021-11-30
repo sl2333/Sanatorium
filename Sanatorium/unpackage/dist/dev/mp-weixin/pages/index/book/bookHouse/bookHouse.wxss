@@ -1,0 +1,123 @@
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: column;
+  -webkit-justify-content: column;
+          justify-content: column;
+}
+.form {
+  width: 700rpx;
+  padding-top: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.form .large-title {
+  font-size: 36rpx;
+}
+.form .status {
+  margin-top: 50rpx;
+}
+.form .title {
+  font-size: small;
+  margin-top: 50rpx;
+}
+.form .top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 20rpx;
+  color: #BBBBBB;
+}
+.form .box {
+  width: 750rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 20rpx;
+}
+.form .box .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20rpx;
+  font-size: small;
+  background-color: #f4f4f4;
+  width: 185rpx;
+  border-radius: 15rpx;
+  box-shadow: 0px 1px 1px 0px #e7e3d3;
+}
+.form .box .item image {
+  width: 185rpx;
+  height: 180rpx;
+}
+.form .box .item text {
+  margin: 10rpx 0rpx 10rpx 10rpx;
+}
+.form .box .item .price {
+  color: #878787;
+}
+.form .scroll {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.form .line {
+  width: 700rpx;
+  height: 1rpx;
+  background-color: #e6e6e6;
+  margin-bottom: -20rpx;
+}
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 25rpx;
+}
+.check {
+  margin-top: 60rpx;
+  font-size: small;
+}
+.button {
+  width: 600rpx;
+  height: 75rpx;
+  margin: 40rpx 0rpx 50rpx 0rpx;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #27aca3;
+}
+

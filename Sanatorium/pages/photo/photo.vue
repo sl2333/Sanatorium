@@ -1,35 +1,40 @@
 <template>
-	<view class="content">
-		<view class="up">
-			<view class="title">
-				<text class="elder">查看老人</text>
-				<text class="all">查看全部</text>
-				<image class="icon" src="../../static/images/mine3.png" />
-			</view>
-			<scroll-view scroll-x="true" class="scroll">
-				<view style="display: flex;">
-					<view class="item" v-for="item in list" :key="index">
-						<view class="box">
-							<image :src="item.imgUrl" />
-						</view>
-						<text class="all">{{item.name}}</text>
-					</view>
-
+	<view>
+		<!-- 家属端 -->
+		<view class="content" v-if="change===0">
+			<view class="up">
+				<view class="title">
+					<text class="elder">查看老人</text>
+					<text class="all">查看全部</text>
+					<image class="icon" src="../../static/images/mine3.png" />
 				</view>
-
-			</scroll-view>
-		</view>
-		<view class="mid">
-			<image src="../../static/images/tv.png" />
-			<text>实时监控</text>
-		</view>
-		<view class="down">
-			<view class="down-item" v-for="item in downList" :key="index">
-			<image :src="item.imgUrl" />
-			<text class="item-up">{{item.name}}</text>
-			<text class="item-down">{{item.add}}</text>
+				<scroll-view scroll-x="true" class="scroll">
+					<view style="display: flex;">
+						<view class="item" v-for="item in list" :key="index">
+							<view class="box">
+								<image :src="item.imgUrl" />
+							</view>
+							<text class="all">{{item.name}}</text>
+						</view>
+					</view>
+				</scroll-view>
 			</view>
-			
+			<view class="mid">
+				<image src="../../static/images/tv.png" />
+				<text>实时监控</text>
+			</view>
+			<view class="down">
+				<view class="down-item" v-for="item in downList" :key="index">
+					<image :src="item.imgUrl" />
+					<text class="item-up">{{item.name}}</text>
+					<text class="item-down">{{item.add}}</text>
+				</view>
+			</view>
+		</view>
+
+		<!-- 护工端 -->
+		<view class="content" v-if="change===1">
+
 		</view>
 	</view>
 </template>
@@ -69,34 +74,46 @@
 						name: '老人1'
 					}
 				],
-				downList:[{
-					id:0,
-					imgUrl:'../../static/images/zhibo.png',
-					name:'老人1',
-					add:'1楼101'
-				},
-				{
-					id:1,
-					imgUrl:'../../static/images/zhibo.png',
-					name:'老人1',
-					add:'1楼101'
-				},
-				{
-					id:2,
-					imgUrl:'../../static/images/zhibo.png',
-					name:'老人1',
-					add:'1楼101'
-				},
-				{
-					id:3,
-					imgUrl:'../../static/images/zhibo.png',
-					name:'老人1',
-					add:'1楼101'
-				}]
+				downList: [{
+						id: 0,
+						imgUrl: '../../static/images/zhibo.png',
+						name: '老人1',
+						add: '1楼101'
+					},
+					{
+						id: 1,
+						imgUrl: '../../static/images/zhibo.png',
+						name: '老人1',
+						add: '1楼101'
+					},
+					{
+						id: 2,
+						imgUrl: '../../static/images/zhibo.png',
+						name: '老人1',
+						add: '1楼101'
+					},
+					{
+						id: 3,
+						imgUrl: '../../static/images/zhibo.png',
+						name: '老人1',
+						add: '1楼101'
+					}
+				],
+				change: 0, //0为家属端，1为护工端
 			}
 		},
 		onLoad() {
 
+			this.change = uni.getStorageSync('change')
+			console.log(this.change)
+			if (this.change === 1) {
+				uni.setTabBarItem({
+					index: 1,
+					text: '任务',
+					iconPath: 'static/images/task5.png',
+					selectedIconPath: 'static/images/task4.png'
+				})
+			}
 		},
 		methods: {
 
@@ -202,15 +219,17 @@
 			margin-right: 20rpx;
 		}
 	}
-	.down{
+
+	.down {
 		width: 740rpx;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		margin-top: 20rpx;
-		
+
 	}
-	.down-item{
+
+	.down-item {
 		width: 355rpx;
 		height: 320rpx;
 		background-color: #ffffff;
@@ -219,18 +238,21 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 10rpx;
-		image{
+
+		image {
 			width: 352rpx;
 			height: 241rpx;
 		}
 	}
-	.item-up{
+
+	.item-up {
 		margin: 5rpx 0rpx 5rpx 10rpx;
 	}
-	.item-down{
+
+	.item-down {
 		text-align: right;
 		margin-right: 8rpx;
-		color:#898989 ;
+		color: #898989;
 		margin-bottom: 5rpx;
 	}
 </style>

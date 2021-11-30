@@ -1,6 +1,17 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/house/house",
+    "pages/index/house/houseDetail",
+    "pages/index/book/bookType",
+    "pages/index/hulian/hulian",
+    "pages/index/hugong/hugong",
+    "pages/index/jiaren/jiaren",
+    "pages/index/jiaren/food/food",
+    "pages/index/cost/cost",
+    "pages/index/book/bookSight/bookSight",
+    "pages/index/book/bookHouse/bookHouse",
+    "pages/index/rank/rank",
     "pages/login/login",
     "pages/login/regist/regist",
     "pages/login/regist/binding",

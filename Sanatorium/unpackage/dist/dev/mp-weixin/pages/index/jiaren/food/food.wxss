@@ -1,0 +1,109 @@
+page {
+  background-color: #f7f8f9;
+}
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.item {
+  width: 700rpx;
+  border-radius: 15rpx;
+  background-color: #ffffff;
+  box-shadow: 0rpx 2rpx 6rpx 0rpx #e2e2db;
+  margin-top: 20rpx;
+  padding: 15rpx;
+}
+.item .title {
+  border-bottom: 1rpx solid #eeeeee;
+  height: 55rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-bottom: 10rpx;
+}
+.item .food {
+  margin-top: 25rpx;
+}
+.item .break {
+  background-color: #fcd79e;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+.item .break-item {
+  border: 5rpx solid #fcd79e;
+  border-radius: 12rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 15rpx;
+}
+.item .lunch {
+  background-color: #fab6b6;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+.item .lunch-item {
+  border: 5rpx solid #fab6b6;
+  border-radius: 12rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 15rpx;
+}
+.item .dinner {
+  background-color: #ade392;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+.item .dinner-item {
+  border: 5rpx solid #ade392;
+  border-radius: 12rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 15rpx;
+}
+.health {
+  margin-top: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.health image {
+  width: 250rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+}
+.btn {
+  width: 700rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  background-color: #9eceff;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+

@@ -83,6 +83,90 @@
           "pathName": "pages/login/regist/bindingOld",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/index/house/house",
+          "pathName": "pages/index/house/house",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/house/houseDetail",
+          "pathName": "pages/index/house/houseDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/book/bookType",
+          "pathName": "pages/index/book/bookType",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/book/bookSight",
+          "pathName": "pages/index/book/bookSight",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/hulian/hulian",
+          "pathName": "pages/index/hulian/hulian",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/hugong/hugong",
+          "pathName": "pages/index/hugong/hugong",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/jiaren/jiaren",
+          "pathName": "pages/index/jiaren/jiaren",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/jiaren/food/food",
+          "pathName": "pages/index/jiaren/food/food",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/rank/rank",
+          "pathName": "pages/index/rank/rank",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/book/bookHouse/bookHouse",
+          "pathName": "pages/index/book/bookHouse/bookHouse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/house/houseDetail",
+          "pathName": "pages/index/house/houseDetail",
+          "query": "item=undefined",
+          "scene": null
+        },
+        {
+          "name": "pages/message/message",
+          "pathName": "pages/message/message",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/cost/cost",
+          "pathName": "pages/index/cost/cost",
+          "query": "",
+          "scene": null
         }
       ]
     }

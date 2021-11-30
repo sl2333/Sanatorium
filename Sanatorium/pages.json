@@ -1,10 +1,78 @@
-{
+{   "easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor":"#27ACA3"
+			}
+		},
+		{
+			"path": "pages/index/house/house",
+			"style": {
+				"navigationBarTitleText": "疗养院"
+			}
+		},
+		{
+			"path": "pages/index/house/houseDetail",
+			"style": {
+				"navigationBarTitleText": "疗养院"
+			}
+		},
+		{
+			"path": "pages/index/book/bookType",
+			"style": {
+				"navigationBarTitleText": "预约种类"
+			}
+		},
+		{
+			"path": "pages/index/hulian/hulian",
+			"style": {
+				"navigationBarTitleText": "互联疗养"
+			}
+		},
+		{
+			"path": "pages/index/hugong/hugong",
+			"style": {
+				"navigationBarTitleText": "护工交流"
+			}
+		},
+		{
+			"path": "pages/index/jiaren/jiaren",
+			"style": {
+				"navigationBarTitleText": "家人健康"
+			}
+		},
+		{
+			"path": "pages/index/jiaren/food/food",
+			"style": {
+				"navigationBarTitleText": "查看膳食"
+			}
+		},
+		{
+			"path": "pages/index/cost/cost",
+			"style": {
+				"navigationBarTitleText": "收费明细"
+			}
+		},
+		{
+			"path": "pages/index/book/bookSight/bookSight",
+			"style": {
+				"navigationBarTitleText": "预约参观申请"
+			}
+		},
+		{
+			"path": "pages/index/book/bookHouse/bookHouse",
+			"style": {
+				"navigationBarTitleText": "预约疗养院"
+			}
+		},
+		{
+			"path": "pages/index/rank/rank",
+			"style": {
+				"navigationBarTitleText": "金牌护工榜"
 			}
 		},
 		{

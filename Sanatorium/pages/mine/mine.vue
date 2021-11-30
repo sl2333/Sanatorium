@@ -1,31 +1,100 @@
 <template>
-	<view class="content">
-		<view class="top">
-			<view class="up">
-				<image class="image" src="../../static/images/tx.png" />
-				<view class="title">
-					<view class="title-first">
-						<text>李*</text>
-						<image v-if="status==1" src="../../static/images/ok.jpg" />
-						<view class="unShure" v-if="status==0">
-							<text>未实名</text>
-						</view>
-					</view>
+	<view>
 
-					<text class="title-phone">178****0473</text>
-					<text class="title-phone">330********2242X</text>
+		<!-- 家属端 -->
+		<view class="content" v-if="change===0">
+			<view class="top">
+				<view class="up">
+					<image class="image" src="../../static/images/tx.png" />
+					<view class="title">
+						<view class="title-first">
+							<text>家属端</text>
+							<image v-if="status==1" src="../../static/images/ok.jpg" />
+							<view class="unShure" v-if="status==0">
+								<text>未实名</text>
+							</view>
+						</view>
+
+						<text class="title-phone">178****0473</text>
+						<text class="title-phone">330********2242X</text>
+					</view>
+					<image @click="gotoInformation()" class="icon" src="../../static/images/mine6.png" />
 				</view>
-				<image @click="gotoInformation()" class="icon" src="../../static/images/mine6.png" />
+				<view class="down">
+					<view class="item">
+						<image src="../../static/images/mine12.png" />
+						<text>历史</text>
+					</view>
+					<view class="item">
+						<image src="../../static/images/mine5.png" />
+						<text>收藏</text>
+					</view>
+					<view class="item">
+						<image src="../../static/images/mine4.png" />
+						<text>待评价</text>
+					</view>
+					<view class="item">
+						<image src="../../static/images/wallet.png" />
+						<text>余额</text>
+					</view>
+				</view>
 			</view>
-			<view class="down">
-				<view class="item">
-					<image src="../../static/images/mine12.png" />
-					<text>历史</text>
+			<view class="bottom" style="margin-top: 45rpx;">
+				<view class="bottom-item" @click="gotoInformation()">
+					<image src="../../static/images/mine7.png" />
+					<text>个人信息</text>
+					<image class="right" src="../../static/images/mine3.png" />
 				</view>
-				<view class="item">
-					<image src="../../static/images/mine5.png" />
-					<text>收藏</text>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine11.png" />
+					<text>家属信息</text>
+					<image class="right" src="../../static/images/mine3.png" />
 				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine9.png" />
+					<text>支付设置</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine10.png" />
+					<text>账号安全</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine8.png" />
+					<text>版本设置</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" style="margin-bottom: 0rpx;" />
+			</view>
+		</view>
+
+		<!-- 护工端 -->
+	
+		<view class="content" v-if="change===1">
+			<view class="top-hugong">
+				<view class="up">
+					<image class="image" src="../../static/images/touxiang1.png" />
+					<view class="title">
+						<view class="title-first">
+							<text>护工1</text>
+							<image v-if="status==1" src="../../static/images/ok.jpg" />
+							<view class="unShure" v-if="status==0">
+								<text>未实名</text>
+							</view>
+						</view>
+
+						<text class="title-phone">158****8299</text>
+						<text class="title-phone">310********6684X</text>
+					</view>
+					<image @click="gotoInformation()" class="icon" src="../../static/images/mine6.png" />
+				</view>
+				<!-- 			<view class="down">
+				
 				<view class="item">
 					<image src="../../static/images/mine4.png" />
 					<text>待评价</text>
@@ -34,56 +103,76 @@
 					<image src="../../static/images/wallet.png" />
 					<text>余额</text>
 				</view>
+			</view> -->
+			</view>
+			
+			<view class="bottom">
+				<view class="bottom-item" @click="gotoInformation()">
+					<image src="../../static/images/mine7.png" />
+					<text>个人信息</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine11.png" />
+					<text>老人信息</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine9.png" />
+					<text>支付设置</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/pingjia.png" />
+					<text>我的评价</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine10.png" />
+					<text>账号安全</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" />
+				<view class="bottom-item">
+					<image src="../../static/images/mine8.png" />
+					<text>版本设置</text>
+					<image class="right" src="../../static/images/mine3.png" />
+				</view>
+				<view class="line" style="margin-bottom: 0rpx;" />
 			</view>
 		</view>
-		<view class="bottom" style="margin-top: 45rpx;">
-			<view class="bottom-item" @click="gotoInformation()">
-				<image src="../../static/images/mine7.png" />
-				<text>个人信息</text>
-				<image class="right" src="../../static/images/mine3.png" />
-			</view>
-			<view class="line" />
-			<view class="bottom-item">
-				<image src="../../static/images/mine11.png" />
-				<text>家属信息</text>
-				<image class="right" src="../../static/images/mine3.png" />
-			</view>
-			<view class="line" />
-			<view class="bottom-item">
-				<image src="../../static/images/mine9.png" />
-				<text>支付设置</text>
-				<image class="right" src="../../static/images/mine3.png" />
-			</view>
-			<view class="line" />
-			<view class="bottom-item">
-				<image src="../../static/images/mine10.png" />
-				<text>账号安全</text>
-				<image class="right" src="../../static/images/mine3.png" />
-			</view>
-			<view class="line" />
-			<view class="bottom-item">
-				<image src="../../static/images/mine8.png" />
-				<text>版本设置</text>
-				<image class="right" src="../../static/images/mine3.png" />
-			</view>
-			<view class="line" style="margin-bottom: 0rpx;"/>
-
-		</view>
+		
 	</view>
 </template>
 
 <script>
+	
 	export default {
 		data() {
 			return {
-				status: 1
+				status: 1,
+				change: 0, //0为家属端，1为护工端
+				
 			}
 		},
 		onLoad() {
-
+			this.change = uni.getStorageSync('change')
+			console.log(this.change)
+			if(this.change===1){
+				uni.setTabBarItem({
+			  index: 1,
+			  text: '任务',
+			  iconPath: 'static/images/task5.png',
+			  selectedIconPath: 'static/images/task4.png'
+			})
+			}
 		},
 		methods: {
-			gotoInformation(){
+			gotoInformation() {
 				uni.navigateTo({
 					url: 'edit/information',
 				})
@@ -109,7 +198,14 @@
 		width: 750rpx;
 		height: 350rpx;
 		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
-		
+
+	}
+
+	.top-hugong {
+		width: 750rpx;
+
+		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+
 	}
 
 	.up {
@@ -121,6 +217,7 @@
 	.image {
 		width: 155rpx;
 		height: 155rpx;
+		border-radius: 50%;
 	}
 
 	.title {
@@ -180,12 +277,12 @@
 		margin-top: 20rpx;
 		display: flex;
 		width: 700rpx;
-		justify-content: space-between;
+		justify-content: space-around;
 		border-radius: 15rpx;
 		background-color: #ffffff;
 		margin-left: 25rpx;
 		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
-		
+
 	}
 
 	.item {
@@ -208,7 +305,7 @@
 		background-color: #ffffff;
 		margin-top: 30rpx;
 		padding: 25rpx 0rpx 0rpx 0rpx;
-		
+
 
 	}
 
