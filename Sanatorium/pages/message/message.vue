@@ -21,7 +21,7 @@
 				</view>
 			</view>
 			<view class="down">
-				<view class="item" v-for="(item,index) in list" :key="index">
+				<view class="item" v-for="(item,index) in list" :key="index" @click="gotoDetail()">
 					<view class="left">
 						<image :src="item.picUrl" />
 					</view>
@@ -60,7 +60,7 @@
 				</view>
 			</view>
 			<view class="down">
-				<view class="item" v-for="(item,index) in list" :key="index">
+				<view class="item" v-for="(item,index) in list" :key="index" @click="gotoDetail()">
 					<view class="left">
 						<image :src="item.picUrl" />
 					</view>
@@ -130,7 +130,11 @@
 			}
 		},
 		methods: {
-			
+			gotoDetail(){
+				uni.navigateTo({
+					url:'messageDetail'
+				})
+			}
 		}
 	}
 </script>

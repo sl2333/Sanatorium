@@ -191,6 +191,18 @@
           "pathName": "pages/photo/photoDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/photo/project/doProject",
+          "pathName": "pages/photo/project/doProject",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/message/messageDetail",
+          "pathName": "pages/message/messageDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

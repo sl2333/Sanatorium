@@ -359,21 +359,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       swipers: [{
         id: 0,
-        imgUrl: '../../static/images/ad5.png' },
+        imgUrl: '../../static/images/liao3.webp' },
 
       {
         id: 1,
-        imgUrl: '../../static/images/ad5.png' },
+        imgUrl: '../../static/images/liao2.png' },
 
       {
         id: 2,
-        imgUrl: '../../static/images/ad5.png' }],
+        imgUrl: '../../static/images/liao1.png' }],
 
 
       change: 1 //0为家属端，1为护工端

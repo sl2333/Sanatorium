@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "消息详情",
+  "usingComponents": {
+    "bianmaren-tooltips": "/components/bianmaren-tooltips/bianmaren-tooltips"
+  }
+}

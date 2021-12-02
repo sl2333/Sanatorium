@@ -171,68 +171,125 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       list: [{
         id: 0,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' },
+        imgUrl: '../../static/images/old.png',
+        name: '钱玉' },
 
       {
         id: 1,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' },
-
-      {
-        id: 2,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' },
-
-      {
-        id: 3,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' },
-
-      {
-        id: 4,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' },
-
-      {
-        id: 5,
-        imgUrl: '../../static/images/sqr.png',
-        name: '老人1' }],
+        imgUrl: '../../static/images/old1.png',
+        name: '郑西华' }],
 
 
       downList: [{
         id: 0,
-        imgUrl: '../../static/images/zhibo.png',
-        name: '老人1',
+        imgUrl: '../../static/images/jk2.jpg',
+        name: '钱玉',
         add: '1楼101' },
 
       {
         id: 1,
-        imgUrl: '../../static/images/zhibo.png',
-        name: '老人1',
-        add: '1楼101' },
+        imgUrl: '../../static/images/jk1.jpg',
+        name: '郑西华',
+        add: '1楼102' }],
+
+
+      change: 0, //0为家属端，1为护工端，
+      title_list: [{
+        id: 0,
+        name: '钱玉' },
+
+      {
+        id: 1,
+        name: '郑西华' }],
+
+      title: '郑西华',
+      date: '2021年12月5日 周五',
+      reportList: [
 
       {
         id: 2,
-        imgUrl: '../../static/images/zhibo.png',
-        name: '老人1',
-        add: '1楼101' },
+        name: '晚餐',
+        iconUrl: '../../static/images/wan.png',
+        finish: 0,
+        deadTime: '19：30',
+        type: '每日任务' },
 
       {
         id: 3,
-        imgUrl: '../../static/images/zhibo.png',
-        name: '老人1',
-        add: '1楼101' }],
+        name: '测量身体数据',
+        iconUrl: '../../static/images/task.png',
+        finish: 0,
+        deadTime: '15：30',
+        type: '每日任务' },
 
 
-      change: 0 //0为家属端，1为护工端
-    };
+      {
+        id: 5,
+        name: '晚饭后散步',
+        iconUrl: '../../static/images/run.png',
+        finish: 0,
+        deadTime: '20：30',
+        type: '自定义任务' },
+
+      {
+        id: 4,
+        name: '食量状况',
+        iconUrl: '../../static/images/task.png',
+        finish: 1,
+        deadTime: '11：30',
+        type: '自定义任务' },
+
+      {
+        id: 0,
+        name: '早餐',
+        iconUrl: '../../static/images/zao.png',
+        finish: 1,
+        deadTime: '10：30',
+        type: '每日任务' },
+
+      {
+        id: 1,
+        name: '中餐',
+        iconUrl: '../../static/images/zhong.png',
+        finish: 1,
+        deadTime: '13：30',
+        type: '每日任务' }] };
+
+
   },
   onLoad: function onLoad() {
 
@@ -245,9 +302,39 @@ var _default =
         iconPath: 'static/images/task5.png',
         selectedIconPath: 'static/images/task4.png' });
 
+      uni.setNavigationBarTitle({
+        title: '任务' });
+
+      uni.setNavigationBarColor({
+        frontColor: '#ffffff',
+        backgroundColor: '#27ACA3',
+        animation: {
+          duration: 400,
+          timingFunc: 'easeIn' } });
+
+
     }
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    gotoDetail: function gotoDetail() {
+      uni.navigateTo({
+        url: 'photoDetail' });
+
+    },
+    titlePicker: function titlePicker(e) {
+      this.title = this.title_list[e.target.value].name;
+      console.log(this.title_list[e.target.value].id); //获取id
+    },
+    bindDateChange: function bindDateChange(e) {
+      this.date = e.target.value;
+
+      // this.getData();
+    },
+    projectDetail: function projectDetail() {
+      uni.navigateTo({
+        url: 'project/doProject' });
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

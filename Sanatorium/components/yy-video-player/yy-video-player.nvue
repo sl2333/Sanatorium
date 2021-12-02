@@ -12,6 +12,7 @@
 			:poster="poster"
 			@fullscreenchange="setFullScreenStatus"
 			@timeupdate="timeUpdate"
+			
 		>
 			<cover-view class="back-button" @click="back" v-if="!isFullScreen && showBackBtn"><image src="../../static/yy-video-player/back-white.png" class="back-icon"></image></cover-view>
 			<cover-view v-if="showDownloadBtn&&!isFullScreen" class="download-button" @click="download(url)">

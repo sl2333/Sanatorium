@@ -93,6 +93,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    yyVideoPlayer: function() {
+      return __webpack_require__.e(/*! import() | components/yy-video-player/yy-video-player */ "components/yy-video-player/yy-video-player").then(__webpack_require__.bind(null, /*! @/components/yy-video-player/yy-video-player.nvue */ 57))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -130,27 +153,58 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var yyVideoPlayer = function yyVideoPlayer() {__webpack_require__.e(/*! require.ensure | components/yy-video-player/yy-video-player */ "components/yy-video-player/yy-video-player").then((function () {return resolve(__webpack_require__(/*! @/components/yy-video-player/yy-video-player.nvue */ 57));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  components: {
+    yyVideoPlayer: yyVideoPlayer },
+
+  data: function data() {
+    return {
+      url: 'https://vd3.bdstatic.com/mda-mm0hys9ajvyzb0j9/sc/cae_h264/1638403305236365197/mda-mm0hys9ajvyzb0j9.mp4?v_from_s=hkapp-haokan-suzhou&amp;auth_key=1638421334-0-0-984d8c96bd31b1d9b16e83c9abfed512&amp;bcevod_channel=searchbox_feed&amp;pd=1&amp;pt=3&amp;abtest=3000187_1&amp;klogid=1934876303'
+      /* 			"https://vd3.bdstatic.com/mda-mm0hys9ajvyzb0j9/sc/cae_h264/1638403305236365197/mda-mm0hys9ajvyzb0j9.mp4?v_from_s=hkapp-haokan-suzhou&amp;auth_key=1638421334-0-0-984d8c96bd31b1d9b16e83c9abfed512&amp;bcevod_channel=searchbox_feed&amp;pd=1&amp;pt=3&amp;abtest=3000187_1&amp;klogid=1934876303"
+                                                                                                                                                                                                                                                                                                              */ };
 
   },
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    //视频播放器
+    onShow: function onShow() {
+      if (this.videoContext) {
+        this.videoContext.play();
+      }
+    },
+    onReady: function onReady() {
+      this.videoContext = uni.createVideoContext('video', this);
+    },
+    onHide: function onHide() {
+      if (this.videoContext) {
+        this.videoContext.stop();
+      }
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

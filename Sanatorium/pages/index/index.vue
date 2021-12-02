@@ -214,9 +214,19 @@
 				<view class="recommend">
 					<text>精彩推荐</text>
 					<view class="wrap">
-						<image src="../../static/images/coffee.png" />
-						<image src="../../static/images/coffee.png" />
-						<image src="../../static/images/coffee.png" />
+						<view class="pic">
+							<image src="../../static/images/reco.png" />
+							<text>核酸模块</text>
+						</view>
+						<view class="pic">
+							<image src="../../static/images/reco2.png" />
+							<text>保险模块</text>
+						</view>
+						<view class="pic">
+							<image src="../../static/images/reco3.png" />
+							<text>健康模块</text>
+						</view>
+
 					</view>
 				</view>
 			</view>
@@ -233,15 +243,15 @@
 			return {
 				swipers: [{
 						id: 0,
-						imgUrl: '../../static/images/ad5.png'
+						imgUrl: '../../static/images/liao3.webp'
 					},
 					{
 						id: 1,
-						imgUrl: '../../static/images/ad5.png'
+						imgUrl: '../../static/images/liao2.png'
 					},
 					{
 						id: 2,
-						imgUrl: '../../static/images/ad5.png'
+						imgUrl: '../../static/images/liao1.png'
 					}
 				],
 				change: 1, //0为家属端，1为护工端
@@ -487,7 +497,7 @@
 
 	.banner-container {
 		width: 100%;
-		height: 200rpx;
+		height: 250rpx;
 
 	}
 
@@ -504,7 +514,7 @@
 
 	.banner-img {
 		width: 690rpx;
-		height: 200rpx;
+		height: 250rpx;
 		border-radius: 20px;
 	}
 
@@ -541,12 +551,20 @@
 		padding: 15rpx;
 		margin-bottom: 20rpx;
 	}
-
+	.wrap{
+		display: flex;
+	}
+	.pic{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.recommend image {
 		width: 200rpx;
 		height: 200rpx;
 		margin-left: 18rpx;
 		margin-top: 10rpx;
+		border: 1rpx solid#c6c6c6;
 	}
 
 	.recommend text {

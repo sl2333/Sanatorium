@@ -17,13 +17,15 @@
     "pages/login/regist/binding",
     "pages/login/regist/bindingOld",
     "pages/message/message",
+    "pages/message/messageDetail",
     "pages/mine/mine",
     "pages/mine/commit/commit",
     "pages/mine/commit/doCommit",
     "pages/mine/edit/information",
     "pages/mine/real/real",
     "pages/photo/photo",
-    "pages/photo/photoDetail"
+    "pages/photo/photoDetail",
+    "pages/photo/project/doProject"
   ],
   "subPackages": [],
   "window": {
