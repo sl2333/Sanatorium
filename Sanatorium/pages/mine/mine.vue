@@ -29,7 +29,7 @@
 						<image src="../../static/images/mine5.png" />
 						<text>收藏</text>
 					</view>
-					<view class="item">
+					<view class="item" @click="gotoCommit()">
 						<image src="../../static/images/mine4.png" />
 						<text>待评价</text>
 					</view>
@@ -175,6 +175,11 @@
 			gotoInformation() {
 				uni.navigateTo({
 					url: 'edit/information',
+				})
+			},
+			gotoCommit(){
+				uni.navigateTo({
+					url: 'commit/commit',
 				})
 			}
 		}

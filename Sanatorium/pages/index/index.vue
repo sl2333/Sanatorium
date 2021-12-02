@@ -45,7 +45,7 @@
 						<image src="../../static/images/index12.png" />
 						<text>预约申请</text>
 					</view>
-					<view class="tabs-item">
+					<view class="tabs-item" @click="gotoCost()">
 						<image src="../../static/images/index10.png" />
 						<text>花费明细</text>
 					</view>

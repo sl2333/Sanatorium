@@ -18,6 +18,8 @@
     "pages/login/regist/bindingOld",
     "pages/message/message",
     "pages/mine/mine",
+    "pages/mine/commit/commit",
+    "pages/mine/commit/doCommit",
     "pages/mine/edit/information",
     "pages/mine/real/real",
     "pages/photo/photo"

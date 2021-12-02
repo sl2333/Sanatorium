@@ -113,6 +113,20 @@
 			}
 		},
 		{
+			"path": "pages/mine/commit/commit",
+			"style": {
+				"navigationBarTitleText": "待评价"
+			
+			}
+		},
+		{
+			"path": "pages/mine/commit/doCommit",
+			"style": {
+				"navigationBarTitleText": "评价"
+			
+			}
+		},
+		{
 			"path": "pages/mine/edit/information",
 			"style": {
 				"navigationBarTitleText": "个人设置"

@@ -167,6 +167,24 @@
           "pathName": "pages/index/cost/cost",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/index/house/house",
+          "pathName": "pages/index/house/house",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/commit/commit",
+          "pathName": "pages/mine/commit/commit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/commit/doCommit",
+          "pathName": "pages/mine/commit/doCommit",
+          "query": "",
+          "scene": null
         }
       ]
     }

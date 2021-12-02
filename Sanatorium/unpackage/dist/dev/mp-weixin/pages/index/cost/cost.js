@@ -194,6 +194,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _uCharts = _interopRequireDefault(__webpack_require__(/*! @/components/u-charts/u-charts.js */ 105));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -257,25 +277,114 @@ var _uCharts = _interopRequireDefault(__webpack_require__(/*! @/components/u-cha
 //
 //
 //
-var _self;var canvaRing = null;var _default = { data: function data() {return { cWidth: '', cHeight: '', pixelRatio: 1, serverData: '', date: '2021-11', moneyList: [], change: 1 //0为家属端，1为护工端
-    };}, onLoad: function onLoad() {this.change = uni.getStorageSync('change');console.log(this.change);_self = this;this.cWidth = uni.upx2px(750);this.cHeight = uni.upx2px(500);this.getServerData();}, methods: { getServerData: function getServerData() {var Ring = { "series": [{ data: [{ name: "钱玉", price: '1500.00¥', value: 1500 }, { name: "郑西华", price: '3000.00¥', value: 3000 }, { name: "王桂花", price: '2000.00¥', value: 2000 }, { name: "张国强", price: '1800.00¥', value: 1800 }, { name: "陈阿华", price: '3000.00¥', value: 3000 }] }] };_self.showRing("canvasRing", Ring);var color = ['#1890FF', '#91CB74', '#FAC858', '#EE6666', '#73C0DE', '#3CA272', '#FC8452', '#9A60B4', '#ea7ccc'];for (var s in Ring) {Ring[s].color = color[s];}console.log('测试', Ring);this.moneyList = Ring.series[0].data;
-      console.log(this.moneyList);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _self;var canvaRing = null;var canvaPie = null;var _default = { data: function data() {return { cWidth: '', cHeight: '', pixelRatio: 1, serverData: '', date: '2021-11', moneyList1: [], moneyList2: [], change: 1 //0为家属端，1为护工端
+    };}, onLoad: function onLoad() {this.change = uni.getStorageSync('change');console.log(this.change);_self = this;this.cWidth = uni.upx2px(750);this.cHeight = uni.upx2px(500);this.getServerData();}, methods: { getServerData: function getServerData() {//护工端
+      var Ring = { "series": [{ data: [{ name: "钱玉", price: '1500.00¥', value: 1500 }, { name: "郑西华", price: '3000.00¥', value: 3000 }, { name: "王桂花", price: '2000.00¥', value: 2000 }, { name: "张国强", price: '1800.00¥', value: 1800 }, { name: "陈阿华", price: '3000.00¥', value: 3000 }] }] };_self.showRing("canvasRing", Ring);var color = ['#1890FF', '#91CB74', '#FAC858', '#EE6666', '#73C0DE', '#3CA272', '#FC8452', '#9A60B4', '#ea7ccc'];for (var s in Ring) {Ring[s].color = color[s];}console.log('测试', Ring);this.moneyList1 = Ring.series[0].data;console.log(this.moneyList1); //家属端
+      //护工端
+      var Pie = { series: [{ id: 0, name: "伙食费", price: '1050.00¥', data: 1050, detail: [{ id: 0, title: '支付宝自动支付-午饭', type: '伙食费', time: '2021/11/30 12：30',
+            picUrl: '../../../static/images/index3.png',
+            price: '10.00',
+            whetherPay: false },
+
+          {
+            id: 1,
+            title: '支付宝自动支付-晚饭',
+            type: '伙食费',
+            time: '2021/11/30 18：30',
+            picUrl: '../../../static/images/index3.png',
+            price: '15.00' }],
+
+          open: 0 },
+        {
+          id: 1,
+          name: "医疗费用",
+          price: '800.00¥',
+          data: 800,
+          detail: [{
+            id: 1,
+            title: '支付宝自动支付-感冒药',
+            type: '医疗费用',
+            time: '2021/11/28 10：30',
+            picUrl: '../../../static/images/index4.png',
+            price: '20.00' },
+
+          {
+            id: 1,
+            title: '支付宝自动支付-体检',
+            type: '医疗费用',
+            time: '2021/10/30 15：00',
+            picUrl: '../../../static/images/index4.png',
+            price: '150.00' }],
+
+          open: 0 },
+
+        {
+          id: 2,
+          name: "护工费用",
+          price: '1000.00¥',
+          data: 1000,
+          detail: [],
+          open: 0 },
+        {
+          id: 3,
+          name: "保健品",
+          price: '300.00¥',
+          data: 300,
+          detail: [],
+          open: 0 },
+        {
+          id: 4,
+          name: "水果",
+          price: '200.00¥',
+          data: 200,
+          detail: [],
+          open: 0 }] };
+
+
+      _self.showPie("canvasPie", Pie);
+      for (var s in Pie) {
+        Pie[s].color = color[s];
+      }
+      console.log('测试', Pie);
+      this.moneyList2 = Pie.series;
+      console.log(this.moneyList2);
+
       /* uni.request({
-                                   	url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
-                                   	data: {},
-                                   	success: function(res) {
-                                   		console.log(res.data.data)
-                                   		let Ring = {
-                                   			series: []
-                                   		};
-                                   		//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
-                                   		Ring.series = res.data.data.Ring.series;
-                                   		_self.showRing("canvasRing", Ring);
-                                   	},
-                                   	fail: () => {
-                                   		_self.tips = "网络错误，小程序端请检查合法域名";
-                                   	},
-                                   }); */
+                                    	url: 'https://www.easy-mock.com/mock/5cc586b64fc5576cba3d647b/uni-wx-charts/chartsdata2',
+                                    	data: {},
+                                    	success: function(res) {
+                                    		console.log(res.data.data)
+                                    		let Ring = {
+                                    			series: []
+                                    		};
+                                    		//这里我后台返回的是数组，所以用等于，如果您后台返回的是单条数据，需要push进去
+                                    		Ring.series = res.data.data.Ring.series;
+                                    		_self.showRing("canvasRing", Ring);
+                                    	},
+                                    	fail: () => {
+                                    		_self.tips = "网络错误，小程序端请检查合法域名";
+                                    	},
+                                    }); */
     },
     showRing: function showRing(canvasId, chartData) {
       canvaRing = new _uCharts.default({
@@ -326,10 +435,44 @@ var _self;var canvaRing = null;var _default = { data: function data() {return { 
         } });
 
     },
+    showPie: function showPie(canvasId, chartData) {
+      canvaPie = new _uCharts.default({
+        $this: _self,
+        canvasId: canvasId,
+        context: uni.createCanvasContext(canvasId, _self),
+        type: 'pie',
+        fontSize: 11,
+        legend: true,
+        background: '#FFFFFF',
+        pixelRatio: _self.pixelRatio,
+        series: chartData.series,
+        animation: true,
+        width: _self.cWidth * _self.pixelRatio,
+        height: _self.cHeight * _self.pixelRatio,
+        dataLabel: true,
+        extra: {
+          pie: {
+            lableWidth: 15 } } });
+
+
+
+    },
+    touchPie: function touchPie(e) {
+      canvaPie.showToolTip(e, {
+        format: function format(item) {
+          return item.name + ':' + item.data;
+        } });
+
+    },
     bindDateChange: function bindDateChange(e) {
       this.date = e.target.value;
       this.page = 1;
       // this.getData();
+    },
+    openClick: function openClick(e) {
+      console.log('这里是分割线');
+      console.log(this.moneyList2);
+      this.moneyList2[e].open = 1;
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

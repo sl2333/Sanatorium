@@ -185,6 +185,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -211,7 +226,80 @@ var _default =
         id: 3,
         name: '临安市第一疗养院',
         lengh: '3.3km',
-        sign: ["有音乐室", "支持医保", "慢病管理"] }] };
+        sign: ["有音乐室", "支持医保", "慢病管理"] }],
+
+
+      select1: '综合排序',
+      select2: '位置距离',
+      select3: '价格/星级',
+      select4: '筛选',
+      title_list1: [{
+        id: 0,
+        name: '综合排序' },
+
+      {
+        id: 1,
+        name: '距离优先' },
+
+      {
+        id: 2,
+        name: '人气优先' },
+
+      {
+        id: 3,
+        name: '好评优先' }],
+
+
+      title_list2: [{
+        id: 0,
+        name: '500m' },
+
+      {
+        id: 1,
+        name: '1km' },
+
+      {
+        id: 2,
+        name: '5km' },
+
+      {
+        id: 3,
+        name: '全城' }],
+
+
+      title_list3: [{
+        id: 0,
+        name: '星级降序' },
+
+      {
+        id: 1,
+        name: '星级升序' },
+
+      {
+        id: 2,
+        name: '价格降序' },
+
+      {
+        id: 3,
+        name: '价格升序' }],
+
+
+      title_list4: [{
+        id: 0,
+        name: '综合排序' },
+
+      {
+        id: 1,
+        name: '距离优先' },
+
+      {
+        id: 2,
+        name: '人气优先' },
+
+      {
+        id: 3,
+        name: '好评优先' }] };
+
 
 
   },
@@ -225,6 +313,22 @@ var _default =
       uni.navigateTo({
         url: './houseDetail?item=' + item });
 
+    },
+    titlePicker1: function titlePicker1(e) {
+      this.select1 = this.title_list1[e.target.value].name;
+      console.log(this.title_list1[e.target.value].id); //获取id
+    },
+    titlePicker2: function titlePicker2(e) {
+      this.select2 = this.title_list1[e.target.value].name;
+      console.log(this.title_list2[e.target.value].id); //获取id
+    },
+    titlePicker3: function titlePicker3(e) {
+      this.select3 = this.title_list1[e.target.value].name;
+      console.log(this.title_list3[e.target.value].id); //获取id
+    },
+    titlePicker4: function titlePicker4(e) {
+      this.select4 = this.title_list1[e.target.value].name;
+      console.log(this.title_list4[e.target.value].id); //获取id
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
