@@ -22,7 +22,8 @@
     "pages/mine/commit/doCommit",
     "pages/mine/edit/information",
     "pages/mine/real/real",
-    "pages/photo/photo"
+    "pages/photo/photo",
+    "pages/photo/photoDetail"
   ],
   "subPackages": [],
   "window": {

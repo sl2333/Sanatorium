@@ -185,6 +185,12 @@
           "pathName": "pages/mine/commit/doCommit",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/photo/photoDetail",
+          "pathName": "pages/photo/photoDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

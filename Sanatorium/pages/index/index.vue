@@ -228,10 +228,6 @@
 </template>
 
 <script>
-	import {
-		tabbar,
-		tabbar2
-	} from "../../common/common.js"
 	export default {
 		data() {
 			return {

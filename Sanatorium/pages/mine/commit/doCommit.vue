@@ -9,26 +9,26 @@
 				<view class="item">
 					<text class="title">综合服务</text>
 					<view class="star">
-						<u-rate active-color="rgb(255,102,52)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
+						<u-rate active-color="rgb(39, 172, 163)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
 					</view>
 				</view>
 
 				<view class="item">
 					<text class="title">医疗互助</text>
 					<view class="star">
-						<u-rate active-color="rgb(255,102,52)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
+						<u-rate active-color="rgb(39, 172, 163)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
 					</view>
 				</view>
 				<view class="item">
 					<text class="title">护工服务</text>
 					<view class="star">
-						<u-rate active-color="rgb(255,102,52)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
+						<u-rate active-color="rgb(39, 172, 163)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
 					</view>
 				</view>
 				<view class="item">
 					<text class="title">优美环境</text>
 					<view class="star">
-						<u-rate active-color="rgb(255,102,52)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
+						<u-rate active-color="rgb(39, 172, 163)" inactive-color="rgb(172, 172, 172)" gutter="20"></u-rate>
 					</view>
 				</view>
 				   
@@ -205,7 +205,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: rgb(255,102,52);
+		background-color: rgb(39, 172, 163);
 		margin-top: 100rpx;
 		margin-left: 7rpx;
 	}

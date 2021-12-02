@@ -75,6 +75,7 @@
 				uni.switchTab({
 					url: '../index/index',
 				})
+				uni.setStorageSync('change',0)
 			}
 		}
 	}

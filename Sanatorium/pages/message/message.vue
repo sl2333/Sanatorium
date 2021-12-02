@@ -85,7 +85,36 @@
 	export default {
 		data() {
 			return {
-				change: 0 //0为家属端，1为护工端
+				change: 0,//0为家属端，1为护工端
+				 list: [{
+				 		id: 0,
+				 		picUrl: '../../static/images/tx.png',
+				 		name: '钱玉亲属',
+				 		content: '干得不错！',
+				 		date: '昨天'
+				 	},
+				 	{
+				 		id: 1,
+				 		picUrl: '../../static/images/tx.png',
+				 		name: '钱玉亲属',
+				 		content: '早点完成任务！',
+				 		date: '昨天'
+				 	},
+				 	{
+				 		id: 2,
+				 		picUrl: '../../static/images/tx.png',
+				 		name: '钱玉亲属',
+				 		content: '老人今日身体怎么样？',
+				 		date: '昨天'
+				 	},
+				 	{
+				 		id: 3,
+				 		picUrl: '../../static/images/tx.png',
+				 		name: '钱玉亲属',
+				 		content: '昨天的任务完成得很好！',
+				 		date: '昨天'
+				 	}
+				 ]
 			}
 		},
 		onLoad() {
@@ -101,35 +130,7 @@
 			}
 		},
 		methods: {
-			list: [{
-					id: 0,
-					picUrl: '../../static/images/tx.png',
-					name: '钱玉亲属',
-					content: '干得不错！',
-					date: '昨天'
-				},
-				{
-					id: 1,
-					picUrl: '../../static/images/tx.png',
-					name: '钱玉亲属',
-					content: '早点完成任务！',
-					date: '昨天'
-				},
-				{
-					id: 2,
-					picUrl: '../../static/images/tx.png',
-					name: '钱玉亲属',
-					content: '老人今日身体怎么样？',
-					date: '昨天'
-				},
-				{
-					id: 3,
-					picUrl: '../../static/images/tx.png',
-					name: '钱玉亲属',
-					content: '昨天的任务完成得很好！',
-					date: '昨天'
-				}
-			]
+			
 		}
 	}
 </script>

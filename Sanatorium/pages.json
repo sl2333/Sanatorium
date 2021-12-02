@@ -144,7 +144,14 @@
 			"style": {
 				"navigationBarTitleText": "监控"
 			}
+		},
+		{
+			"path": "pages/photo/photoDetail",
+			"style": {
+				"navigationBarTitleText": "监控"
+			}
 		}
+		
 	],
 	"tabBar": {
 		"selectedColor": "#3A9255",

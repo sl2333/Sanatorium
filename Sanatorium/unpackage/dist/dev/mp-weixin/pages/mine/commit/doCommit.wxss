@@ -130,7 +130,7 @@ page {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  background-color: #ff6634;
+  background-color: #27aca3;
   margin-top: 100rpx;
   margin-left: 7rpx;
 }
