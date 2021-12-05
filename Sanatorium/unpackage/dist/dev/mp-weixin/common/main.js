@@ -105,31 +105,31 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 {
-  onLaunch: function onLaunch() {
-    console.log('App Launch');
-    //判断当前版本更新
-    console.log('当前版本', this.$u.config.v);
-    // 版本更新
-    var that = this;
-    var updateManager = uni.getUpdateManager();
-    updateManager.onCheckForUpdate(function (res) {
-      // 请求完新版本信息的回调
-    });
-    updateManager.onUpdateReady(function () {
-      uni.showModal({
-        title: '更新提示',
-        content: '新版本已经准备好，是否重启应用？',
-        success: function success(res) {
-          if (res.confirm) {
-            // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
-            updateManager.applyUpdate();
-          }
-        } });
 
-    });
-    // 新的版本下载失败
-    updateManager.onUpdateFailed(function () {});
+  onLaunch: function onLaunch() {
+    uni.getSystemInfo({
+      success: function success(e) {
+        Vue.prototype.statusBar = e.statusBarHeight;
+
+
+
+
+
+
+
+
+
+        var custom = wx.getMenuButtonBoundingClientRect();
+        Vue.prototype.customBar = custom.bottom + custom.top - e.statusBarHeight;
+
+
+
+
+
+      } });
+
   },
+
   onShow: function onShow() {
     console.log('App Show');
   },

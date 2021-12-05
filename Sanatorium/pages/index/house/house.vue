@@ -47,7 +47,7 @@
 
 			<view class="card">
 				<view class="item" v-for="item in list" :key="index" @click="detailClick(item)">
-					<image src="../../../static/images/house5.jpg" />
+					<image :src="item.picUrl" />
 					<view class="right">
 						<text class="item-title">{{item.name}}</text>
 						<view class="box">
@@ -74,28 +74,60 @@
 			return {
 				list: [{
 						id: 0,
-						name: '临安市第一疗养院',
-						lengh: '3.3km',
-						sign: ["有音乐室", "支持医保", "慢病管理"]
+						name: '解放军杭州疗养院',
+						lengh: '13.3km',
+						sign: ["有音乐室", "支持医保", "慢病管理","电子报告"],
+						picUrl:'../../../static/images/house5.jpg'
 					},
 					{
 						id: 1,
-						name: '临安市第一疗养院',
+						name: '临安市青山湖疗养院',
 						lengh: '3.3km',
-						sign: ["有音乐室", "支持医保", "慢病管理"]
-					},
+						sign: ["有音乐室", "支持医保", "慢病管理"],
+						picUrl:'../../../static/images/liao11.jpg',
+						},
 					{
 						id: 2,
-						name: '临安市第一疗养院',
-						lengh: '3.3km',
-						sign: ["有音乐室", "支持医保", "慢病管理"]
+						name: '青山镇老人疗养院',
+						lengh: '5.4km',
+						sign: ["有音乐室", "支持医保", "慢病管理"],
+						picUrl:'../../../static/images/liao12.jpg'
 					},
 					{
 						id: 3,
-						name: '临安市第一疗养院',
+						name: '树德疗养院',
 						lengh: '3.3km',
-						sign: ["有音乐室", "支持医保", "慢病管理"]
-					}
+						sign: ["有音乐室", "支持医保", "慢病管理"],
+						picUrl:'../../../static/images/liao18.jpg'
+					},
+					{
+							id: 4,
+							name: '方顺疗养院',
+							lengh: '13.0km',
+							sign: ["有音乐室", "支持医保", "慢病管理"],
+							picUrl:'../../../static/images/liao14.jpg'
+						},
+						{
+							id: 5,
+							name: '康德疗养院',
+							lengh: '7.9km',
+							sign: ["有音乐室", "支持医保", "慢病管理"],
+							picUrl:'../../../static/images/liao15.jpg'
+						},
+						{
+							id: 6,
+							name: '松朗疗养院',
+							lengh: '4.3km',
+							sign: ["有音乐室", "支持医保", "慢病管理"],
+							picUrl:'../../../static/images/liao16.jpg'
+						},
+						{
+							id: 7,
+							name: '南彩疗养院',
+							lengh: '3.3km',
+							sign: ["有音乐室", "支持医保", "慢病管理"],
+							picUrl:'../../../static/images/liao17.jpg'
+						}
 				],
 				select1: '综合排序',
 				select2: '位置距离',
@@ -273,7 +305,7 @@
 
 	.card {
 		width: 700rpx;
-		height: 800rpx;
+		
 		background-color: #ffffff;
 		margin-left: 25rpx;
 		display: flex;

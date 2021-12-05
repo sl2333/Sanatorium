@@ -153,6 +153,7 @@
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	        align-items: center;
+	z-index: 0;
 }
 .tabs-item image {
 	width: 50rpx;
@@ -163,6 +164,7 @@
 	height: 1rpx;
 	background-color: #F0F0F0;
 	margin-top: -245rpx;
+	z-index: -1;
 }
 .box {
 	display: -webkit-box;
@@ -300,4 +302,5 @@
 	height: 100rpx;
 	width: 100%;
 }
+
 

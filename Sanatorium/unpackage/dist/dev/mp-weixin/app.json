@@ -12,6 +12,10 @@
     "pages/index/book/bookSight/bookSight",
     "pages/index/book/bookHouse/bookHouse",
     "pages/index/rank/rank",
+    "pages/index/police/policeType/policeType",
+    "pages/index/police/police/police",
+    "pages/index/police/dealPolice/dealPolice",
+    "pages/index/police/dealPolice/dealDetail/dealDetail",
     "pages/login/login",
     "pages/login/regist/regist",
     "pages/login/regist/binding",
@@ -64,5 +68,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

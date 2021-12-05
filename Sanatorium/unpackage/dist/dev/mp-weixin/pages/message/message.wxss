@@ -88,6 +88,7 @@ page {
 .left image {
   width: 100rpx;
   height: 100rpx;
+  border-radius: 50%;
 }
 .right {
   width: 670rpx;
@@ -146,5 +147,65 @@ page {
   height: 15rpx;
   border-radius: 50%;
   background-color: #ff4d4d;
+}
+.hong1 {
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.sign1 {
+  padding: 0rpx 8rpx 0rpx 8rpx;
+  margin-left: 30rpx;
+  height: 40rpx;
+  color: #ffffff;
+  background-color: #f89769;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: smaller;
+  border-radius: 10rpx;
+}
+.sign2 {
+  background-color: #44a2fd;
+  padding: 0rpx 8rpx 0rpx 8rpx;
+  margin-left: 30rpx;
+  height: 40rpx;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: smaller;
+  border-radius: 10rpx;
+}
+.sign3 {
+  background-color: #f6bc47;
+  padding: 0rpx 8rpx 0rpx 8rpx;
+  margin-left: 30rpx;
+  height: 40rpx;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: smaller;
+  border-radius: 10rpx;
 }
 

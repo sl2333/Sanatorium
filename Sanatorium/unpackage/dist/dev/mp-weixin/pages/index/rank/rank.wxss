@@ -67,6 +67,7 @@
 .top1 .rankimg {
   width: 130rpx;
   height: 130rpx;
+  border-radius: 50%;
 }
 .top2 {
   display: -webkit-box;
@@ -89,6 +90,7 @@
 .top2 .rankimg {
   width: 110rpx;
   height: 110rpx;
+  border-radius: 50%;
 }
 .top3 {
   display: -webkit-box;
@@ -111,6 +113,7 @@
 .top3 .rankimg {
   width: 110rpx;
   height: 110rpx;
+  border-radius: 50%;
 }
 .crown {
   width: 40rpx;
@@ -142,6 +145,7 @@
   width: 100rpx;
   height: 100rpx;
   margin-left: 20rpx;
+  border-radius: 50%;
 }
 .otherrank .rankname {
   margin-left: 50rpx;

@@ -1,5 +1,6 @@
 <template>
 	<view>
+
 		<!-- 家属端 -->
 		<view class="content" v-if="change===0">
 			<view class="top">
@@ -65,7 +66,7 @@
 						<image src="../../static/images/index9.png" />
 						<text>聊一聊</text>
 					</view>
-					<view class="tabs-item">
+					<view class="tabs-item" @click="gotoPolice()">
 						<image src="../../static/images/index11.png" />
 						<text>立即报警</text>
 					</view>
@@ -103,9 +104,19 @@
 				<view class="recommend">
 					<text>精彩推荐</text>
 					<view class="wrap">
-						<image src="../../static/images/coffee.png" />
-						<image src="../../static/images/coffee.png" />
-						<image src="../../static/images/coffee.png" />
+						<view class="pic">
+							<image src="../../static/images/reco.png" />
+							<text>核酸模块</text>
+						</view>
+						<view class="pic">
+							<image src="../../static/images/reco2.png" />
+							<text>保险模块</text>
+						</view>
+						<view class="pic">
+							<image src="../../static/images/reco3.png" />
+							<text>健康模块</text>
+						</view>
+					
 					</view>
 				</view>
 			</view>
@@ -168,8 +179,8 @@
 						<image src="../../static/images/index13.png" />
 						<text>每日任务</text>
 					</view>
-					<view class="tabs-item">
-						<image src="../../static/images/index7.png" />
+					<view class="tabs-item" @click="gotoPolice()">
+						<image src="../../static/images/index7.png" /> 
 						<text>立即报警</text>
 					</view>
 					<view class="tabs-item" @click="gotoRank()">
@@ -268,6 +279,13 @@
 			  iconPath: 'static/images/task5.png',
 			  selectedIconPath: 'static/images/task4.png'
 			})
+			}else if(this.change===0){
+				uni.setTabBarItem({
+				  index: 1,
+				  text: '监控',
+				  iconPath: 'static/images/photo1.png',
+				  selectedIconPath: 'static/images/new1.png'
+				})
 			}
 			
 		},
@@ -307,6 +325,12 @@
 					url: './cost/cost'
 				})
 			},
+			gotoPolice(){
+				console.log('test')
+				uni.navigateTo({
+					url:'police/policeType/policeType'
+				})
+			}
 
 		}
 	}
@@ -421,6 +445,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		
 	}
 
 	.tabs-item {
@@ -431,7 +456,7 @@
 		justify-content: space-around;
 		font-size: 25rpx;
 		align-items: center;
-
+		z-index: 0;
 
 	}
 
@@ -446,6 +471,7 @@
 		height: 1rpx;
 		background-color: #F0F0F0;
 		margin-top: -245rpx;
+		z-index: -1;
 	}
 
 	.box {
@@ -459,6 +485,7 @@
 		width: 1rpx;
 		background-color: #f0f0f0;
 		margin-top: -160rpx;
+		
 	}
 
 	.doctor {
@@ -575,4 +602,5 @@
 		height: 100rpx;
 		width: 100%;
 	}
+	
 </style>

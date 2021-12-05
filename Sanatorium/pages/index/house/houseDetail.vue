@@ -5,7 +5,7 @@
 			<view class="intro">
 				<image class="large" src="../../../static/images/house5.jpg" />
 				<view class="box">
-					<text class="title">解放军杭州疗养院体检中心</text>
+					<text class="title">解放军杭州疗养院</text>
 					<image class="star" src="../../../static/images/house6.png" />
 					<view class="price">
 						<text>150条</text>
@@ -24,9 +24,9 @@
 					<text class="time">周一至周日 07：30-11：30 14：30-17：00</text>
 				</view>
 				<view class="status-down">
-					<text>医疗执业许可</text>
-					<text>vip体检</text>
-					<text>专项体检</text>
+					<text>有音乐室</text>
+					<text>支持医保</text>
+					<text>慢病管理</text>
 					<text>电子报告</text>
 				</view>
 			</view>
@@ -88,7 +88,7 @@
 						</view>
 						<view class="images">
 							<view v-for="item1 in item.picUrl" key="index">
-								<image :src="item1" />
+								<image  :src="item1" />
 							</view>
 
 						</view>
@@ -120,71 +120,68 @@
 			return {
 				list: [{
 						id: 0,
-						name: '针对糖尿病人套餐',
-						sold: '0',
-						price: '5000',
+						name: '五星大厨套餐',
+						sold: '15',
+						price: '3000',
 						imgUrl: '../../../static/images/tc1.png'
 					},
 					{
 						id: 0,
-						name: '针对糖尿病人套餐',
-						sold: '0',
-						price: '5000',
-						imgUrl: '../../../static/images/tc1.png'
+						name: '带游泳服务套餐',
+						sold: '21',
+						price: '4000',
+						imgUrl: '../../../static/images/taocan1.png'
 					},
 					{
 						id: 0,
-						name: '针对糖尿病人套餐',
-						sold: '0',
-						price: '5000',
-						imgUrl: '../../../static/images/tc1.png'
+						name: '高档房间套餐',
+						sold: '10',
+						price: '8000',
+						imgUrl: '../../../static/images/taocan2.png'
 					},
 					{
 						id: 0,
-						name: '针对糖尿病人套餐',
-						sold: '0',
-						price: '5000',
-						imgUrl: '../../../static/images/tc1.png'
+						name: '雅致景观套餐',
+						sold: '2',
+						price: '15000',
+						imgUrl: '../../../static/images/taocan3.png'
 					}
 				],
 				pingList: [{
 						id: 0,
-						name: '花花花花',
+						name: '小陈',
 						time: '2021年11月5日',
-						detail: '这次体检特地选择了有慢病管理项目的疗养院，觉得家里长辈的身体不是很好，需要完善的医疗系统，体验感非常好！',
-						tx: '../../../static/images/tx.png',
-						picUrl: ['../../../static/images/coffee.png', '../../../static/images/coffee.png',
-							'../../../static/images/coffee.png'
+						detail: '这里的厨师手艺真好！',
+						tx: '../../../static/images/tx1.png',
+						picUrl: ['../../../static/images/food1.png', '../../../static/images/food2.png']
+					},
+					{
+						id: 0,
+						name: '花花',
+						time: '2021年11月1日',
+						detail: '这次特地选择了有慢病管理项目的疗养院，觉得家里长辈的身体不是很好，需要完善的医疗系统，体验感非常好！',
+						tx: '../../../static/images/tx2.png',
+						picUrl: ['../../../static/images/doc1.png', '../../../static/images/doc2.png',
+							'../../../static/images/doc3.png'
 						]
 					},
 					{
 						id: 0,
-						name: '花花花花',
-						time: '2021年11月5日',
-						detail: '这次体检特地选择了有慢病管理项目的疗养院，觉得家里长辈的身体不是很好，需要完善的医疗系统，体验感非常好！',
-						tx: '../../../static/images/tx.png',
-						picUrl: ['../../../static/images/coffee.png', '../../../static/images/coffee.png',
-							'../../../static/images/coffee.png'
+						name: '李成',
+						time: '2021年10月7日',
+						detail: '父亲反馈雅致景观房的入住感很好，钱花的很值！',
+						tx: '../../../static/images/tx3.png',
+						picUrl: ['../../../static/images/hotel1.png', '../../../static/images/hotel2.png',
+							'../../../static/images/hotel3.png'
 						]
 					},
 					{
 						id: 0,
-						name: '花花花花',
-						time: '2021年11月5日',
-						detail: '这次体检特地选择了有慢病管理项目的疗养院，觉得家里长辈的身体不是很好，需要完善的医疗系统，体验感非常好！',
-						tx: '../../../static/images/tx.png',
-						picUrl: ['../../../static/images/coffee.png', '../../../static/images/coffee.png',
-							'../../../static/images/coffee.png'
-						]
-					},
-					{
-						id: 0,
-						name: '花花花花',
-						time: '2021年11月5日',
-						detail: '这次体检特地选择了有慢病管理项目的疗养院，觉得家里长辈的身体不是很好，需要完善的医疗系统，体验感非常好！',
-						tx: '../../../static/images/tx.png',
-						picUrl: ['../../../static/images/coffee.png', '../../../static/images/coffee.png',
-							'../../../static/images/coffee.png'
+						name: '小花',
+						time: '2020年5月5日',
+						detail: '游泳套餐很贴心，有专业人员在，长辈也能更好地运动',
+						tx: '../../../static/images/tx6.png',
+						picUrl: ['../../../static/images/swim.png'
 						]
 					}
 				]
@@ -428,7 +425,7 @@
 		.bottom-body {
 			width: 750rpx;
 			padding-top: 20rpx;
-
+			margin-bottom: 150rpx;
 			.bottom-item {
 				display: flex;
 			}
@@ -436,6 +433,7 @@
 			.tx {
 				width: 85rpx;
 				height: 85rpx;
+				border-radius: 50%;
 			}
 
 			.right {
@@ -455,6 +453,7 @@
 				image {
 					width: 80rpx;
 					height: 80rpx;
+					
 				}
 
 				text {
@@ -487,11 +486,12 @@
 			.images {
 				width: 600rpx;
 				display: flex;
-
+				
 				image {
 					width: 150rpx;
 					height: 150rpx;
 					margin: 20rpx 20rpx 20rpx 0rpx;
+					
 				}
 			}
 

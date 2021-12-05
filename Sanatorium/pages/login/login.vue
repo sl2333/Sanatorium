@@ -71,11 +71,29 @@
 				})
 			},
 			loginClick(){
-				console.log('1')
-				uni.switchTab({
+				
+				if(this.state==0){
+					uni.setStorageSync('change',0)
+					uni.reLaunch({
+					    url:'../index/index?change=0'
+					});
+
+					uni.switchTab({
 					url: '../index/index',
 				})
-				uni.setStorageSync('change',0)
+				
+				}else
+				if(this.state==1){
+					uni.setStorageSync('change',1)
+					uni.reLaunch({
+					    url:'../index/index?change=1'
+					});
+					uni.switchTab({
+					url: '../index/index',
+				})
+				
+				}
+				
 			}
 		}
 	}

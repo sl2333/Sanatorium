@@ -103,39 +103,39 @@
 				],
 				nurseList: [{
 						id: 0,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '林桂花',
+						picUrl: '../../../../static/images/hg10.png',
+						price: 1700
 					},
 					{
 						id: 1,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '梅兰',
+						picUrl: '../../../../static/images/hg11.png',
+						price: 2500
 					},
 					{
 						id: 2,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '小陈',
+						picUrl: '../../../../static/images/hg12.png',
+						price: 1900
 					},
 					{
 						id: 3,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '李阿花',
+						picUrl: '../../../../static/images/hg13.png',
+						price: 1800
 					},
 					{
 						id: 4,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '小花',
+						picUrl: '../../../../static/images/hg14.png',
+						price: 2000
 					},
 					{
 						id: 5,
-						name: '李卓恬',
-						picUrl: '../../../../static/images/coffee.png',
-						price: 3500
+						name: '李婶',
+						picUrl: '../../../../static/images/hg15.png',
+						price: 1500
 					}
 				],
 				title: '请选择',
@@ -227,7 +227,7 @@
 
 				image {
 					width: 185rpx;
-					height: 180rpx;
+					height: 250rpx;
 				}
 
 				text {
@@ -277,4 +277,5 @@
 		justify-content: center;
 		background-color: rgb(39,172,163);
 	}
+
 </style>

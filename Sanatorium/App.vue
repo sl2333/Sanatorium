@@ -1,30 +1,30 @@
 <script>
 	export default {
+		
 		onLaunch: function() {
-			console.log('App Launch')
-			//判断当前版本更新
-			console.log('当前版本', this.$u.config.v);
-			// 版本更新
-			var that = this;
-			const updateManager = uni.getUpdateManager()
-			updateManager.onCheckForUpdate(function(res) {
-				// 请求完新版本信息的回调
-			})
-			updateManager.onUpdateReady(function() {
-				uni.showModal({
-					title: '更新提示',
-					content: '新版本已经准备好，是否重启应用？',
-					success: function(res) {
-						if (res.confirm) {
-							// 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
-							updateManager.applyUpdate()
-						}
-					}
-				})
-			})
-			// 新的版本下载失败
-			updateManager.onUpdateFailed(function() {})
+		    uni.getSystemInfo({
+		        success:function(e){
+		            Vue.prototype.statusBar = e.statusBarHeight
+		            // #ifndef MP
+		            if(e.platform == 'android') {
+		                Vue.prototype.customBar = e.statusBarHeight + 50
+		            }else {
+		                Vue.prototype.customBar = e.statusBarHeight + 45
+		            }
+		            // #endif
+		            
+		            // #ifdef MP-WEIXIN
+		            let custom = wx.getMenuButtonBoundingClientRect()
+		            Vue.prototype.customBar = custom.bottom + custom.top - e.statusBarHeight
+		            // #endif
+		            
+		            // #ifdef MP-ALIPAY
+		            Vue.prototype.customBar = e.statusBarHeight + e.titleBarHeight
+		            // #endif
+		        }
+		    })
 		},
+
 		onShow: function() {
 			console.log('App Show')
 		},

@@ -58,9 +58,9 @@
 					<image class="right" src="../../static/images/mine3.png" />
 				</view>
 				<view class="line" />
-				<view class="bottom-item">
+				<view class="bottom-item" @click="signOut()">
 					<image src="../../static/images/mine10.png" />
-					<text>账号安全</text>
+					<text>退出账号</text>
 					<image class="right" src="../../static/images/mine3.png" />
 				</view>
 				<view class="line" />
@@ -131,9 +131,9 @@
 					<image class="right" src="../../static/images/mine3.png" />
 				</view>
 				<view class="line" />
-				<view class="bottom-item">
+				<view class="bottom-item" @click="signOut()">
 					<image src="../../static/images/mine10.png" />
-					<text>账号安全</text>
+					<text>退出账号</text>
 					<image class="right" src="../../static/images/mine3.png" />
 				</view>
 				<view class="line" />
@@ -180,6 +180,11 @@
 			gotoCommit(){
 				uni.navigateTo({
 					url: 'commit/commit',
+				})
+			},
+			signOut(){
+				uni.navigateTo({
+					url: '../login/login',
 				})
 			}
 		}

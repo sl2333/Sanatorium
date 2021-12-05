@@ -203,6 +203,48 @@
           "pathName": "pages/message/messageDetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/index/police/police",
+          "pathName": "pages/index/police/police",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/policeType/policeType",
+          "pathName": "pages/index/police/policeType/policeType",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/police/police",
+          "pathName": "pages/index/police/police/police",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/dealPolice/dealPolice",
+          "pathName": "pages/index/police/dealPolice/dealPolice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/dealPolice/d",
+          "pathName": "pages/index/police/dealPolice/",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/dealPolice/dealPolice",
+          "pathName": "pages/index/police/dealPolice/dealPolice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/police/dealPolice/dealDetail/dealDetail",
+          "pathName": "pages/index/police/dealPolice/dealDetail/dealDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

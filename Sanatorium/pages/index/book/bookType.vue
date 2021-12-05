@@ -81,6 +81,7 @@
 		justify-content: center;
 		flex-direction: column;
 		color: rgb(232, 206, 176);
+		box-shadow: 0px 2px 10px 0px rgb(232, 206, 176);
 		font-size: small;
 
 		image {
@@ -100,6 +101,7 @@
 		justify-content: center;
 		flex-direction: column;
 		color: rgb(236, 182, 182);
+		box-shadow: 0px 2px 10px 0px rgb(236, 182, 182);
 		font-size: small;
 
 		image {
@@ -119,6 +121,7 @@
 		justify-content: center;
 		flex-direction: column;
 		color: rgb(234, 206, 98);
+		box-shadow: 0px 2px 10px 0px rgb(234, 206, 98);
 		font-size: small;
 
 		image {

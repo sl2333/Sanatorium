@@ -81,7 +81,6 @@ page {
 }
 .card {
   width: 700rpx;
-  height: 800rpx;
   background-color: #ffffff;
   margin-left: 25rpx;
   display: -webkit-box;

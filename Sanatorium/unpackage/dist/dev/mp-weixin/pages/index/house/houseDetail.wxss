@@ -232,6 +232,7 @@ page {
 .bottom .bottom-body {
   width: 750rpx;
   padding-top: 20rpx;
+  margin-bottom: 150rpx;
 }
 .bottom .bottom-body .bottom-item {
   display: -webkit-box;
@@ -241,6 +242,7 @@ page {
 .bottom .bottom-body .tx {
   width: 85rpx;
   height: 85rpx;
+  border-radius: 50%;
 }
 .bottom .bottom-body .right {
   display: -webkit-box;

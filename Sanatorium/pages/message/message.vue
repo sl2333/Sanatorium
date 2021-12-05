@@ -4,7 +4,7 @@
 		<!-- 家属端 -->
 		<view class="content" v-if="change===0">
 			<view class="up">
-				消息（20）
+				消息（6）
 			</view>
 			<view class="mid">
 				<view class="icon">
@@ -32,7 +32,7 @@
 						</view>
 						<view class="right-right">
 							<text class="item-content">{{item.date}}</text>
-							<view class="hong" />
+							<view :class="[item.red==1? 'hong':'hong1']" />
 
 						</view>
 					</view>
@@ -62,16 +62,29 @@
 			<view class="down">
 				<view class="item" v-for="(item,index) in list" :key="index" @click="gotoDetail()">
 					<view class="left">
-						<image :src="item.picUrl" />
+						<image  :src="item.picUrl" />
 					</view>
 					<view :class="[list.length==index+1? 'right':'right1']">
 						<view class="right-left">
-							<text class="item-title">{{item.name}}</text>
+							<view style="display: flex;">
+								<text class="item-title">{{item.name}}</text>
+								<view class="sign1" v-if="item.type=='家属'">
+									<text>{{item.type}}</text>
+								</view>
+								<view class="sign2" v-if="item.type=='疗养院'">
+									<text>{{item.type}}</text>
+								</view>
+								<view class="sign3" v-if="item.type=='系统通知'">
+									<text>{{item.type}}</text>
+								</view>
+							</view>
+							
 							<text class="item-content">{{item.content}}</text>
 						</view>
+
 						<view class="right-right">
 							<text class="item-content">{{item.date}}</text>
-							<view class="hong" />
+							<view :class="[item.red==1? 'hong':'hong1']" />
 
 						</view>
 					</view>
@@ -85,54 +98,80 @@
 	export default {
 		data() {
 			return {
-				change: 0,//0为家属端，1为护工端
-				 list: [{
-				 		id: 0,
-				 		picUrl: '../../static/images/tx.png',
-				 		name: '钱玉亲属',
-				 		content: '干得不错！',
-				 		date: '昨天'
-				 	},
-				 	{
-				 		id: 1,
-				 		picUrl: '../../static/images/tx.png',
-				 		name: '钱玉亲属',
-				 		content: '早点完成任务！',
-				 		date: '昨天'
-				 	},
-				 	{
-				 		id: 2,
-				 		picUrl: '../../static/images/tx.png',
-				 		name: '钱玉亲属',
-				 		content: '老人今日身体怎么样？',
-				 		date: '昨天'
-				 	},
-				 	{
-				 		id: 3,
-				 		picUrl: '../../static/images/tx.png',
-				 		name: '钱玉亲属',
-				 		content: '昨天的任务完成得很好！',
-				 		date: '昨天'
-				 	}
-				 ]
+				change: 0, //0为家属端，1为护工端
+				list: [{
+						id: 0,
+						picUrl: '../../static/images/tx.png',
+						name: '钱玉亲属',
+						content: '干得不错！',
+						date: '17:20',
+						type: '家属',
+						red: 1
+					},
+					{
+						id: 1,
+						picUrl: '../../static/images/tx.png',
+						name: '钱玉亲属',
+						content: '早点完成任务！',
+						date: '昨天',
+						type: '家属',
+						red: 0
+					},
+					{
+						id: 2,
+						picUrl: '../../static/images/tx.png',
+						name: '钱玉亲属',
+						content: '老人今日身体怎么样？',
+						date: '昨天',
+						type: '家属',
+						red: 0
+					},
+/* 					{
+						id: 3,
+						picUrl: '../../static/images/tx.png',
+						name: '钱玉亲属',
+						content: '昨天的任务完成得很好！',
+						date: '昨天',
+						type: '家属',
+						red: 0
+					}, */
+					{
+						id: 4,
+						picUrl: '../../static/images/house5.jpg',
+						name: '疗养院',
+						content: '请缴费！',
+						date: '昨天',
+						type: '疗养院',
+						red: 0
+					},
+					{
+						id: 5,
+						picUrl: '../../static/images/tx4.png',
+						name: '系统通知',
+						content: '恭喜开通app！',
+						date: '昨天',
+						type: '系统通知',
+						red: 0
+					}
+				]
 			}
 		},
 		onLoad() {
 			this.change = uni.getStorageSync('change')
 			console.log(this.change)
-			if(this.change===1){
+			if (this.change === 1) {
 				uni.setTabBarItem({
-			  index: 1,
-			  text: '任务',
-			  iconPath: 'static/images/task5.png',
-			  selectedIconPath: 'static/images/task4.png'
-			})
+					index: 1,
+					text: '任务',
+					iconPath: 'static/images/task5.png',
+					selectedIconPath: 'static/images/task4.png'
+				})
 			}
 		},
 		methods: {
-			gotoDetail(){
+			gotoDetail() {
 				uni.navigateTo({
-					url:'messageDetail'
+					url: 'messageDetail'
 				})
 			}
 		}
@@ -208,7 +247,8 @@
 	.left image {
 		width: 100rpx;
 		height: 100rpx;
-	}
+		border-radius:50%;
+	}	
 
 	.right {
 		width: 670rpx;
@@ -256,5 +296,51 @@
 		height: 15rpx;
 		border-radius: 50%;
 		background-color: rgb(255, 77, 77);
+	}
+
+	.hong1 {
+		width: 15rpx;
+		height: 15rpx;
+		border-radius: 50%;
+		background-color: rgb(255, 255, 255);
+	}
+
+	.sign1 {
+		padding: 0rpx 8rpx 0rpx 8rpx;
+		margin-left: 30rpx;
+		height: 40rpx;
+		color: #ffffff;
+		background-color: rgb(248, 151, 105);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: smaller;
+		border-radius: 10rpx;
+	}
+
+	.sign2 {
+		background-color: rgb(68, 162, 253);
+		padding: 0rpx 8rpx 0rpx 8rpx;
+		margin-left: 30rpx;
+		height: 40rpx;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: smaller;
+		border-radius: 10rpx;
+	}
+
+	.sign3 {
+		background-color: rgb(246, 188, 71);
+		padding: 0rpx 8rpx 0rpx 8rpx;
+		margin-left: 30rpx;
+		height: 40rpx;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: smaller;
+		border-radius: 10rpx;
 	}
 </style>

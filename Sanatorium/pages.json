@@ -7,6 +7,7 @@
 			"style": {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor":"#27ACA3"
+				//"navigationStyle":"custom"
 			}
 		},
 		{
@@ -73,6 +74,30 @@
 			"path": "pages/index/rank/rank",
 			"style": {
 				"navigationBarTitleText": "金牌护工榜"
+			}
+		},
+		{
+			"path": "pages/index/police/policeType/policeType",
+			"style": {
+				"navigationBarTitleText": "报警分类"
+			}
+		},
+		{
+			"path": "pages/index/police/police/police",
+			"style": {
+				"navigationBarTitleText": "立即报警"
+			}
+		},
+		{
+			"path": "pages/index/police/dealPolice/dealPolice",
+			"style": {
+				"navigationBarTitleText": "处理事项"
+			}
+		}, 
+		{
+			"path": "pages/index/police/dealPolice/dealDetail/dealDetail",
+			"style": {
+				"navigationBarTitleText": "处理事项"
 			}
 		},
 		{

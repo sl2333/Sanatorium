@@ -26,7 +26,7 @@
 		},
 		data() {
 			return {
-				url:'https://vd3.bdstatic.com/mda-mm0hys9ajvyzb0j9/sc/cae_h264/1638403305236365197/mda-mm0hys9ajvyzb0j9.mp4?v_from_s=hkapp-haokan-suzhou&amp;auth_key=1638421334-0-0-984d8c96bd31b1d9b16e83c9abfed512&amp;bcevod_channel=searchbox_feed&amp;pd=1&amp;pt=3&amp;abtest=3000187_1&amp;klogid=1934876303'
+				url:'http://tangbucker.oss-cn-hangzhou.aliyuncs.com/CareHome/Video/163869365552141.mp4?Expires=1640841138&OSSAccessKeyId=LTAI5tNju6tSVYrD6ivwm9TZ&Signature=T4ZyeDjycfk5s9%2BsTwV02Gld5%2BQ%3D'
 /* 			"https://vd3.bdstatic.com/mda-mm0hys9ajvyzb0j9/sc/cae_h264/1638403305236365197/mda-mm0hys9ajvyzb0j9.mp4?v_from_s=hkapp-haokan-suzhou&amp;auth_key=1638421334-0-0-984d8c96bd31b1d9b16e83c9abfed512&amp;bcevod_channel=searchbox_feed&amp;pd=1&amp;pt=3&amp;abtest=3000187_1&amp;klogid=1934876303"
  */			}
 			

@@ -68,7 +68,7 @@
 }
 .form .box .item image {
   width: 185rpx;
-  height: 180rpx;
+  height: 250rpx;
 }
 .form .box .item text {
   margin: 10rpx 0rpx 10rpx 10rpx;
