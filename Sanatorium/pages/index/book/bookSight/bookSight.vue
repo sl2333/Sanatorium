@@ -25,16 +25,16 @@
 				<text>访问时间</text>
 				<view class="card">
 					<text>2021/11/4 13：28</text>
-					<image src="../../../../static/images/house3.png" />
+					<image src="../../../static/images/house3.png" />
 				</view>
 			</view>
 			<view class="item" style="height: auto;width: auto;">
 				<text>核酸检测报告上传</text>
 				<view style="display: flex;">
-					<image class="upload" src="../../../../static/images/upload.png" @click="addInfo" />
+					<image class="upload" src="../../../static/images/upload.png" @click="addInfo" />
 					<view class="img" v-for="(item,index) in imgList" :key="index" @tap="ViewImage">
 						<image :src="imgList[index]" mode="aspectFill"></image>
-						<image @click="delete1(index)" class="delete" src="../../../../static/images/delete.png" mode=""></image>
+						<image @click="delete1(index)" class="delete" src="../../../static/images/delete.png" mode=""></image>
 					</view>
 				</view>
 

@@ -6,8 +6,8 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "",
-				"navigationBarBackgroundColor":"#27ACA3",
-				"navigationStyle":"custom"
+				"navigationBarBackgroundColor":"#27ACA3"
+				//"navigationStyle":"custom"
 			}
 		},
 		{

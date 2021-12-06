@@ -20,33 +20,20 @@
 					<text>系统通知</text>
 				</view>
 			</view>
-		<view class="down">
+			<view class="down">
 				<view class="item" v-for="(item,index) in list" :key="index" @click="gotoDetail()">
 					<view class="left">
-						<image  :src="item.picUrl" />
+						<image :src="item.picUrl" />
 					</view>
 					<view :class="[list.length==index+1? 'right':'right1']">
 						<view class="right-left">
-							<view style="display: flex;">
-								<text class="item-title">{{item.name}}</text>
-								<view class="sign1" v-if="item.type=='家属'">
-									<text>{{item.type}}</text>
-								</view>
-								<view class="sign2" v-if="item.type=='疗养院'">
-									<text>{{item.type}}</text>
-								</view>
-								<view class="sign3" v-if="item.type=='系统通知'">
-									<text>{{item.type}}</text>
-								</view>
-							</view>
-							
+							<text class="item-title">{{item.name}}</text>
 							<text class="item-content">{{item.content}}</text>
 						</view>
-		
 						<view class="right-right">
 							<text class="item-content">{{item.date}}</text>
 							<view :class="[item.red==1? 'hong':'hong1']" />
-		
+
 						</view>
 					</view>
 				</view>
