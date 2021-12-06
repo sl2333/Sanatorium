@@ -254,7 +254,7 @@
 			return {
 				swipers: [{
 						id: 0,
-						imgUrl: '../../static/images/liao3.webp'
+						imgUrl: '../../static/images/liao3.png'
 					},
 					{
 						id: 1,
@@ -345,8 +345,9 @@
 	}
 
 	.top {
+		padding-top: 100rpx;
 		width: 750rpx;
-		height: 280rpx;
+		height: 380rpx;
 		background-color: rgb(39, 172, 163);
 		display: flex;
 		flex-direction: column;
@@ -407,6 +408,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		z-index: 0;
 	}
 
 	.up {
